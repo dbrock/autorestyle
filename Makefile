@@ -7,6 +7,6 @@ clean:
 commit:
 	git checkout gh-pages
 	git rm -rf --ignore-unmatch .
-	find gen -type f | xargs -I% cp % .
+	test -d gen && find gen -type f | xargs -I% cp % .
 	git save -A || true
 	git checkout -
