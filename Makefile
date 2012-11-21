@@ -4,9 +4,9 @@ build: clean
 	cp CNAME index.html gen
 clean:
 	rm -rf gen
-commit:
+commit: build
 	git checkout gh-pages
 	git rm -rf --ignore-unmatch .
-	test -d gen && find gen -type f | xargs -I% cp % .
+	find gen -type f | xargs -I% cp % .
 	git save -A || true
 	git checkout -
