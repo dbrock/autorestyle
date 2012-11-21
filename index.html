@@ -3,11 +3,17 @@
 <style>
   html { width: 100%; height: 100%; display: table; }
   body { display: table-cell; vertical-align: middle; }
-  body { text-align: center; padding-bottom: 10%; }
-  body { font: 2em serif; background: ivory; }
-  code { padding: 1ex 1em; background: beige; color: gray; }
-  b { color: black; }
+  body { padding-bottom: 10%; text-align: center; }
+  body { background: ivory; color: #333; }
+  @media (min-width: 48em) { body { font-size: 3em; } }
+  h1 { font: 200 1.25em 'Helvetica Neue' sans-serif; }
+  h1 { letter-spacing: -1px; }
+  abbr { font-size: .75em; }
+  code { background: #333; color: white; }
+  code { padding: 1ex 1em; border-radius: 1ex; }
+  code { white-space: pre; word-wrap: break-word; text-align: left; }
+  code { width: 16em; margin: auto; display: block; }
 </style>
-<h1>Reload your stylesheets all night,<br>
-  even while you’re asleep:</h1>
-<code>&lt;script src="<b>http://autorestyle.gointeractive.se/.js</b>">&lt;/script></code>
+<h1>Reload your <abbr>CSS</abbr> all night:</h1>
+<code>&lt;script src="<strong>http://autorestyle.gointeractive.se/autorestyle.js</strong>">&lt;/script></code>
+<p>Yes, even while you’re asleep.</p>
