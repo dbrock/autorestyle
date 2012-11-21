@@ -9,5 +9,6 @@ commit:
 	git rm -rf --ignore-unmatch .
 	find gen -type f | xargs -I% mv % .
 	rmdir gen
-	git save -A
+	git add -A
+	git commit --dry-run && git save || true
 	git checkout -
