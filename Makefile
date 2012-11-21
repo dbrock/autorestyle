@@ -10,5 +10,5 @@ commit:
 	find gen -type f | xargs -I% cp % .
 	git add -A
 	git rm -r --cached gen
-	git commit --porcelain && git save || true
+	git commit --porcelain && git save || echo No changes
 	git checkout -
