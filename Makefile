@@ -7,8 +7,8 @@ clean:
 commit:
 	git checkout gh-pages
 	git rm -rf --ignore-unmatch .
-	find gen -type f | xargs -I% mv % .
-	rmdir gen
+	find gen -type f | xargs -I% cp % .
 	git add -A
+	git rm -r --cached gen
 	git commit --dry-run && git save || true
 	git checkout -
