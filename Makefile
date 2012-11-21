@@ -1,6 +1,6 @@
 build: clean
 	mkdir gen
-	dart2js autorestyle.dart -ogen/.js
+	dart2js autorestyle.dart -ogen/autorestyle.js
 	cp CNAME index.html gen
 clean:
 	rm -rf gen
